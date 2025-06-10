@@ -6,14 +6,14 @@ import io
 
 label_info = {
     0: {
-        "penyakit": "Sehat",
-        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
-        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
-    },
-    1: {
         "penyakit": "Bercak Daun (Gray Leaf Spot)",
         "penjelasan": "Disebabkan oleh jamur Cercospora zeae-maydis, muncul bercak-bercak abu-abu memanjang.",
         "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
+    },
+    1: {
+        "penyakit": "Karat Daun (Common Rust)",
+        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
+        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
     },
     2: {
         "penyakit": "Hawar Daun (Northern Leaf Blight)",
@@ -21,9 +21,9 @@ label_info = {
         "solusi": "Aplikasi fungisida seperti mancozeb atau azoxystrobin dan pilih varietas tahan penyakit."
     },
     3: {
-        "penyakit": "Karat Daun (Common Rust)",
-        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
-        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
+        "penyakit": "Sehat",
+        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
+        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
     }
 }
 
