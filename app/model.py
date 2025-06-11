@@ -6,24 +6,24 @@ import io
 
 label_info = {
     0: {
-         "penyakit": "Karat Daun (Common Rust)",
-        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
-        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
+        "penyakit": "Bercak Daun (Gray Leaf Spot)",
+        "penjelasan": "Disebabkan oleh jamur Cercospora zeae-maydis, muncul bercak-bercak abu-abu memanjang.",
+        "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
     },
     1: {
-        "penyakit": "Hawar Daun (Northern Leaf Blight)",
-        "penjelasan": "Disebabkan oleh jamur Exserohilum turcicum, gejala berupa bercak lonjong memanjang.",
-        "solusi": "Aplikasi fungisida seperti mancozeb atau azoxystrobin dan pilih varietas tahan penyakit."
-    },
-    2: {
         "penyakit": "Daun Sehat",
         "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
         "solusi": "Lanjutkan perawatan dan pemupukan rutin."
     },
+    2: {
+        "penyakit": "Hawar Daun (Northern Leaf Blight)",
+        "penjelasan": "Disebabkan oleh jamur Exserohilum turcicum, gejala berupa bercak lonjong memanjang.",
+        "solusi": "Aplikasi fungisida seperti mancozeb atau azoxystrobin dan pilih varietas tahan penyakit."
+    },
     3: {
-        "penyakit": "Bercak Daun (Gray Leaf Spot)",
-        "penjelasan": "Disebabkan oleh jamur Cercospora zeae-maydis, muncul bercak-bercak abu-abu memanjang.",
-        "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
+        "penyakit": "Karat Daun (Common Rust)",
+        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
+        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
     }
 }
 
@@ -34,7 +34,7 @@ def load_model():
 
 def preprocess_image(image_bytes):
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    image = image.resize((224, 224))
+    image = image.resize((180, 180))  # GANTI ke 180x180, agar sama seperti training
     image_array = np.array(image) / 255.0
     image_array = np.expand_dims(image_array, axis=0)
     return image_array.astype(np.float32)
