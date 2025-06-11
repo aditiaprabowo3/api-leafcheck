@@ -6,9 +6,9 @@ import io
 
 label_info = {
     0: {
-        "penyakit": "Bercak Daun (Gray Leaf Spot)",
-        "penjelasan": "Disebabkan oleh jamur Cercospora zeae-maydis, muncul bercak-bercak abu-abu memanjang.",
-        "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
+         "penyakit": "Karat Daun (Common Rust)",
+        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
+        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
     },
     1: {
         "penyakit": "Hawar Daun (Northern Leaf Blight)",
@@ -21,9 +21,9 @@ label_info = {
         "solusi": "Lanjutkan perawatan dan pemupukan rutin."
     },
     3: {
-        "penyakit": "Karat Daun (Common Rust)",
-        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
-        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
+        "penyakit": "Bercak Daun (Gray Leaf Spot)",
+        "penjelasan": "Disebabkan oleh jamur Cercospora zeae-maydis, muncul bercak-bercak abu-abu memanjang.",
+        "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
     }
 }
 
