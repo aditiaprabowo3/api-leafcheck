@@ -8,7 +8,7 @@ label_info = {
     0: {
         "penyakit": "Karat Daun (Common Rust)",
         "penjelasan": (
-            "Disebabkan oleh jamur *Puccinia sorghi*. Gejala ini ditandai dengan bintik-bintik bulat berwarna oranye hingga cokelat "
+            "Disebabkan oleh jamur Puccinia sorghi. Gejala ini ditandai dengan bintik-bintik bulat berwarna oranye hingga cokelat "
             "seperti karat, menyebar di permukaan atas dan bawah daun. Infeksi parah menyebabkan daun mengering dan menurunkan hasil panen."
         ),
         "solusi": (
@@ -21,7 +21,7 @@ label_info = {
     1: {
         "penyakit": "Hawar Daun (Northern Leaf Blight)",
         "penjelasan": (
-            "Disebabkan oleh jamur *Exserohilum turcicum*. Gejala berupa bercak lonjong memanjang berwarna abu-abu atau cokelat, "
+            "Disebabkan oleh jamur Exserohilum turcicum. Gejala berupa bercak lonjong memanjang berwarna abu-abu atau cokelat, "
             "yang dapat bergabung dan menyebabkan kerusakan luas pada daun."
         ),
         "solusi": (
@@ -46,7 +46,7 @@ label_info = {
     3: {
         "penyakit": "Bercak Daun (Gray Leaf Spot)",
         "penjelasan": (
-            "Disebabkan oleh jamur *Cercospora zeae-maydis*. Gejalanya berupa bercak persegi panjang atau oval memanjang "
+            "Disebabkan oleh jamur Cercospora zeae-maydis. Gejalanya berupa bercak persegi panjang atau oval memanjang "
             "berwarna abu-abu sampai cokelat terang, sering terlihat sejajar dengan tulang daun."
         ),
         "solusi": (
