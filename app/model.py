@@ -34,8 +34,8 @@ def load_model():
 
 def preprocess_image(image_bytes):
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    image = image.resize((180, 180))  # SAMA DENGAN INPUT MODEL
-    image_array = np.array(image) / 255.0
+    image = image.resize((180, 180))  # sesuaikan dengan input model
+    image_array = np.array(image) / 255.0  # rescaling 1./255
     image_array = np.expand_dims(image_array, axis=0)
     return image_array.astype(np.float32)
 
