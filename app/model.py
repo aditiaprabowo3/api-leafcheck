@@ -11,9 +11,9 @@ label_info = {
         "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
     },
     1: {
-        "penyakit": "Karat Daun (Common Rust)",
-        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
-        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
+        "penyakit": "Daun Sehat",
+        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
+        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
     },
     2: {
         "penyakit": "Hawar Daun (Northern Leaf Blight)",
@@ -21,9 +21,9 @@ label_info = {
         "solusi": "Aplikasi fungisida seperti mancozeb atau azoxystrobin dan pilih varietas tahan penyakit."
     },
     3: {
-        "penyakit": "Sehat",
-        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
-        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
+        "penyakit": "Karat Daun (Common Rust)",
+        "penjelasan": "Disebabkan oleh jamur Puccinia sorghi, muncul bintik-bintik kemerahan seperti karat.",
+        "solusi": "Gunakan fungisida seperti propiconazole, dan tanam varietas tahan karat."
     }
 }
 
