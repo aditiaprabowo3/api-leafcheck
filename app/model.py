@@ -40,20 +40,29 @@ def preprocess_image(image_bytes):
     return image_array.astype(np.float32)
 
 def predict(model, image_bytes):
-    input_data = preprocess_image(image_bytes)
-    preds = model.predict(input_data)
-    
-    confidence = np.max(preds[0])
-    class_index = np.argmax(preds[0])
+    try:
+        input_data = preprocess_image(image_bytes)
+        print("Input data shape:", input_data.shape)
 
-    info = label_info.get(class_index, {
-        "penyakit": "Tidak diketahui",
-        "penjelasan": "Label tidak terdaftar di sistem.",
-        "solusi": "Periksa kembali label atau latih ulang model."
-    })
+        preds = model.predict(input_data)
+        print("Prediction result:", preds)
 
-    # Tambahkan confidence ke hasil
-    info_with_confidence = info.copy()
-    info_with_confidence["confidence"] = float(confidence)
+        confidence = np.max(preds[0])
+        class_index = np.argmax(preds[0])
 
-    return info_with_confidence
+        print("Predicted class index:", class_index)
+
+        info = label_info.get(class_index, {
+            "penyakit": "Tidak diketahui",
+            "penjelasan": "Label tidak terdaftar di sistem.",
+            "solusi": "Periksa kembali label atau latih ulang model."
+        })
+
+        info_with_confidence = info.copy()
+        info_with_confidence["confidence"] = float(confidence)
+
+        return info_with_confidence
+
+    except Exception as e:
+        print("Terjadi error:", str(e))
+        raise
