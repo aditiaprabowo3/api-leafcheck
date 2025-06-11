@@ -11,14 +11,14 @@ label_info = {
         "solusi": "Gunakan fungisida berbasis strobilurin atau triazol, dan lakukan rotasi tanaman."
     },
     1: {
-        "penyakit": "Daun Sehat",
-        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
-        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
-    },
-    2: {
         "penyakit": "Hawar Daun (Northern Leaf Blight)",
         "penjelasan": "Disebabkan oleh jamur Exserohilum turcicum, gejala berupa bercak lonjong memanjang.",
         "solusi": "Aplikasi fungisida seperti mancozeb atau azoxystrobin dan pilih varietas tahan penyakit."
+    },
+    2: {
+        "penyakit": "Daun Sehat",
+        "penjelasan": "Daun jagung dalam kondisi sehat, tanpa gejala penyakit.",
+        "solusi": "Lanjutkan perawatan dan pemupukan rutin."
     },
     3: {
         "penyakit": "Karat Daun (Common Rust)",
