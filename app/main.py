@@ -23,3 +23,5 @@ async def predict_endpoint(file: UploadFile = File(...)):
     image_bytes = await file.read()
     info = predict(model, image_bytes)
     return PredictResponse(**info)
+
+
