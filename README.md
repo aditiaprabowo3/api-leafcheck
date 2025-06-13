@@ -50,4 +50,3 @@ API akan tersedia di http://localhost:8000.
 9. Endpoint Utama
     
 POST /predict
-
