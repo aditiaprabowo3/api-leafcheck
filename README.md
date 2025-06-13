@@ -4,48 +4,47 @@ Backend ini dibangun menggunakan FastAPI dan berfungsi untuk melakukan prediksi 
 
 REST API untuk mendeteksi penyakit pada daun tanaman menggunakan model CNN dan FastAPI.
 
-## 🚀 Cara Menjalankan di Lokal
+Teknologi yang Digunakan
+- Python
+- FastAPI
+- Railway
 
-1. **Persiapan**
-   
-Pastikan kamu sudah menginstall:
-- Python 3.8 atau lebih tinggi
-- pip
-- virtualenv (opsional tapi disarankan) supaya tidak tercampur dengan project python lain
+## 🚀 Cara Menjalankan API Secara Lokal
 
-Saya menggunakan venv, ini merupakan tool bawaan Python untuk membuat virtual environment langkah-langkahnya seperti berikut :
+1. **Clone Repository**
 
-- Buat virtual environment pada terminal
-  
-``` bash
+```bash
+git clone https://github.com/aditiaprabowo3/api-leafcheck.git
+```
+
+2. **Buat Virtual Environment**
+
+Jalankan pada terminal
+```bash
 python -m venv venv
 ```
 
-- Aktifkan virtual environment di cmd/powershell
-  
-``` bash
+Jalankan pada cmd/powersheel untuk mengaktifkan
+```bash
 venv\Scripts\activate
 ```
 
-2. **Clone repo ini**
-
-`git clone https://github.com/aditiaprabowo3/api-leafcheck`.
-   
-4. **Install dependencies**
+3. **Install dependencies**
    
 ```bash
 pip install -r requirements.txt
 ```
    
-5. **Download Model Terlatih**
+4. **Download Model Terlatih**
 
-Model_jagung.h5 tidak disimpan langsung di repo karena ukurannya besar. Silakan unduh model secara manual melalu tautan di bawah ini:
+Model tidak disimpan di repo karena ukurannya besar. Unduh file .h5 melalui link berikut:
 
-https://drive.google.com/file/d/1TsGy9PhXoGXAwBuJ8vVPfCA5e0B2WjTD/view?usp=sharing
+🔗 https://drive.google.com/file/d/1TsGy9PhXoGXAwBuJ8vVPfCA5e0B2WjTD/view?usp=sharing
 
-5. **Letakkan hasil unduhan di folder model**
+5. **Tempatkan Model**
    
-Model yang sudah terdownload di letakan pada folder model, sebelumnya kamu harus membuat folder dengan nama **model** masukan model yang udah di download ke folder tersebut.
+- Buat folder dengan nama model untuk menyimpan model h5 
+- Letakkan file model_jagung.h5 ke dalam folder model/
 
 7. **Struktur direktori yang dibutuhkan di akhir**
    
@@ -62,10 +61,11 @@ api-leafcheck-main/
 ├── README.md
 ```
 
-8. **Menjalankan API Pada Lokal**
+8. **Jalankan Server API**
    ```bash
    uvicorn main:app --reload
    ```
-API akan tersedia di http://localhost:8000.
-
-Akses link yang didapat setelah menjalankan code tadi seprti contoh http://127.0.0.1:8000, dan setelah itu tambahkan '\docs' yang akan diarahkan untuk mengetes api yang kita buat pada fastapi
+- Akses API di http://localhost:8000
+- pada link tersebut tambahkan **\docs**
+- Kunjungi dokumentasi interaktif FastAPI (Swagger UI)
+- Mencoba mengetes api apakah sudah sesuai atau belum
