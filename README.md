@@ -1,9 +1,12 @@
-# leafcheck api
-LeafCheck API adalah layanan RESTful untuk mendeteksi penyakit pada daun jagung menggunakan model CNN. Pengguna dapat mengunggah gambar daun melalui endpoint /predict, dan sistem akan mengembalikan hasil diagnosa berupa:
-- Nama penyakit
-- Penjelasan penyakit
-- Solusi penanganan
+# 🌿 LeafCheck API - Backend (FastAPI)
 
-🌐 Deployment
+Backend ini dibangun menggunakan FastAPI dan berfungsi untuk melakukan prediksi penyakit pada gambar daun jagung menggunakan model Convolutional Neural Network (CNN) yang telah dilatih.
 
-Proyek ini dideploy di platform Railway, yaitu platform cloud hosting yang mendukung deployment aplikasi web (termasuk API) secara mudah.
+REST API untuk mendeteksi penyakit pada daun tanaman menggunakan model CNN dan FastAPI.
+
+## 🚀 Cara Menjalankan di Lokal
+
+1. **Kloning repo ini**  `git clone --recurse-submodules`.
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
