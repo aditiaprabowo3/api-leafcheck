@@ -30,14 +30,14 @@ Unudhan di letakan pada folder model, sehingga kamu harus membuat folder model t
 6. Struktur direktori yang dibutuhkan di akhir:
 api-leafcheck/
 ├── app/
-    ├── __init__.py
-    ├── download_model.py
+│   ├── __init__.py
+│   ├── download_model.py
 │   ├── main.py
 │   ├── model.py
 │   └── schemas.py
 ├── model/
-│   └── model_jagung.h5 
-├── requirements.txt
+│   └── model_jagung.h5
+├── README.md
 
 7. Jalankan API
    ```bash
