@@ -42,6 +42,8 @@ api-leafcheck/
 7. Jalankan API
    ```bash
    uvicorn main:app --reload
+   ```
+API akan tersedia di http://localhost:8000.
    
 8. Akses link yang didapat setelah menjalankan code tadi seprti contoh http://127.0.0.1:8000, dan setelah itu tambahkan '\docs' dan setelah itu kita bsia mengetes api yang kita buat pada fastapi
 
