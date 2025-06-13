@@ -7,6 +7,7 @@ REST API untuk mendeteksi penyakit pada daun tanaman menggunakan model CNN dan F
 ## 🚀 Cara Menjalankan di Lokal
 
 1. **Persiapan**
+   
 Pastikan kamu sudah menginstall:
 - Python 3.8 atau lebih tinggi
 - pip
@@ -28,6 +29,7 @@ https://drive.google.com/file/d/1TsGy9PhXoGXAwBuJ8vVPfCA5e0B2WjTD/view?usp=shari
 Unudhan di letakan pada folder model, sehingga kamu harus membuat folder model terlebih dahulu selanjutkan masukan model yang udah di download ke folder tersebut.
 
 6. Struktur direktori yang dibutuhkan di akhir:
+```
 api-leafcheck/
 ├── app/
 │   ├── __init__.py
@@ -38,8 +40,9 @@ api-leafcheck/
 ├── model/
 │   └── model_jagung.h5
 ├── README.md
+```
 
-7. Jalankan API
+8. Jalankan API
    ```bash
    uvicorn main:app --reload
    ```
